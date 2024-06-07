@@ -1,12 +1,12 @@
- name: Deploy docker ci basic application
- 'on':
-   push:
-     branches:
-       - main
- jobs:
-   docker:
-     runs-on: ubuntu-latest
-     steps:
+name: Deploy docker ci basic application
+'on':
+  push:
+    branches:
+      - main
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
        -
          name: Checkout
          uses: actions/checkout@v3     
